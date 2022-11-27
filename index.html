@@ -66,6 +66,48 @@
         .card p {
             padding: 0px 20px;
         }
+
+        input[type=text], select{
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+            border: 1px solid bisque;
+        }
+        
+        input[type=submit]{
+            width: 100%;
+            padding: 13px 0px;
+            background-color: grey;
+            border: none;
+            color: white;
+            margin-top: 20px;
+        }
+
+        input[type=text]:focus{
+            background-color: lightblue;
+        }
+
+        input[type=text]:hover{
+            background-color: antiquewhite;
+        }
+
+        .form-general{
+            background-color: lightgray;
+            margin: 150px;
+            padding: 20px;
+            margin: 30px 278px;
+        }
+
+        .footer{
+            background-color: antiquewhite;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     </style>
 
 </head>
@@ -125,6 +167,29 @@
                 esse.</p>
         </div>
     </div>
+
+    <form action="" class="form-general">
+        <label for="">Ad</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Adınızı Giriniz...">
+        
+        <label for="">Soyad</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Soyadınızı Giriniz...">
+        
+        <label for="country">Ülke</label>
+        <select name="country" id="">
+            <option value="tr">Türkiye</option>
+            <option value="fr">Fransa</option>
+            <option value="en">England</option>
+        </select>
+
+        <input type="submit" value="kaydet">
+
+    </form>
+
+    <div class="footer">
+        <h3>Frontend && Tüm hakları saklıdır</h3>
+    </div>
+
 </body>
 
 </html>
